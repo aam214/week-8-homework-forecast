@@ -5,14 +5,14 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Heebo&family=Roboto+Mono&display=swap" rel="stylesheet">
 
     <title>Week 8 Forecast</title>
   </head>
   <body>
+    <container>
     <div class="application">
       <header>
       <form class="search-form"
@@ -40,11 +40,15 @@
             </div> 
             <div class="readings">
             <div class="weather-condition" id="description">Snow</div>
-            <div class="time" id="time">Friday 01:16</div> 
-          <span class="humid">Humidity: <span class="numbers" id="humidity"></span></span>
-          <span class="wind">Wind: <span class="numbers" id="wind-speed"></span></span>
+            <div class="time" id="time">Friday,01:16</div> 
+          <span class="humid">Humidity:<span class="numbers" id="humidity"></span></span>
+          <span class="wind">Wind:<span class="numbers" id="wind-speed"></span></span>
              </div>
-      
+             <div class="weather-forecast">
+              <div class="row"></div>
+              <div class="col-2">Thur</div>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAQBJREFUaN7t2csNwyAMBmBGYYSMwhgdgxEYjRW6ARu4HNyqB0CKednElf5b2/hLSALGAICRHKMABSjgUMDdD7xfLifkxByoJOJ33O3/nwHIhVgsKDWKriXhb+0WQD6wJxZegvhlADzrcUDhpeFlpwLyAa5BZ711Na4pgAXFNxFdABw2K4r/R9iRgLiw+N89MQSATxvYFN8F2DB0qkOJCggbi/8m9AASA0AiAXBuA0ziKIDACBAogMgIECkAYBUFKEABzwOIf4yKf5HJnkqIn8wxmk775y5oxC8pj1jUH9FWEd/YOqK1eERz94j2euFqUCF7NzjYbzHpLqUCFKCAJfkAq7RimK7qUtAAAAAASUVORK5CYII="
+             width="36"/>18 12 </div>
             </p>
       </main>
       <footer> <div class="information">
@@ -58,5 +62,6 @@
       </footer>
       </div>
     <script src="app.js"></script>
+  </container>
   </body>
 </html>

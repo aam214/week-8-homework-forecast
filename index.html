@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <title>Week 8 Forecast</title>
+  </head>
+  <body>
+    <div class="application">
+      <header>
+      <form class="search-form"
+      id="search-form">
+        <input
+          type="search"
+          placeholder="Enter a City..."
+          required
+          class="search-form-input"
+        id="search-form-input"/>
+        <input type="submit" value="Search" class="submit-form" />
+        </header>
+      </form>
+      <main>
+        <div class="weather-app-data">
+          <div>
+      <h1 class="current-city" id="current-city">City</h1>
+       </div> 
+      <div class="weather-app-icon" id="icon"> </div>
+      <p>
+        <div>
+           <div class="weather-app-temperature-container">
+            <div class="current-temperature" id="temperature"></div>
+            <div class="weather-app-unit">°F</div>
+            </div> 
+            <div class="readings">
+            <div class="weather-condition" id="description">Snow</div>
+            <div class="time" id="time">Friday 01:16</div> 
+          <span class="humid">Humidity: <span class="numbers" id="humidity"></span></span>
+          <span class="wind">Wind: <span class="numbers" id="wind-speed"></span></span>
+             </div>
+      
+            </p>
+      </main>
+      <footer> <div class="information">
+        This project was coded by
+        <a href="https://github.com/aam214" target="_blank">Ariana M.</a> hosted
+        <a href="https://github.com/aam214/Wrecast" target="_blank"
+          >on Github</a
+        >
+        and with <a href="" target="_blank">Netlify</a>.
+      </div>
+      </footer>
+      </div>
+    <script src="app.js"></script>
+  </body>
+</html>

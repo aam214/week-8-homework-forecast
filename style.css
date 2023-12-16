@@ -1,0 +1,111 @@
+h1,
+p,
+.weather-app-unit,
+.submit-form,
+.weather-condition,
+.time,
+.wind,
+.humid,
+.current-temperature,
+footer {
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+  color: #155263;
+}
+
+header {
+  border-bottom: 1px solid rgb(235, 235, 235);
+  padding: 0 0 20px 0;
+}
+
+.information {
+  border-top: 1px solid rgb(235, 235, 235);
+  padding: 25px 0 0 0;
+  font-size: 14px;
+}
+body {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/107/421/original/meterology.jpg?1702710411);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  padding-top: 70px;
+  margin-top: 48px;
+  padding-left: 20px;
+  font-size: 50px;
+}
+.weather-app-icon {
+  padding-top: 50px;
+}
+.weather-app-data {
+  display: flex;
+  justify-content: space-evenly;
+}
+.numbers,
+.weather-condition {
+  color: #ff9a3c;
+  font-size: 15px;
+  font-weight: bold;
+}
+.current-temperature {
+  font-size: 55px;
+  font-weight: bold;
+  position: relative;
+  padding-left: 140px;
+  padding-top: 90px;
+}
+.weather-app-unit {
+  position: relative;
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 230px;
+  margin-top: -67px;
+}
+
+.readings {
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  padding-left: 140px;
+  padding-top: 40px;
+}
+
+.search-form-input {
+  background: rgb(246, 245, 250);
+  border: none;
+  width: 250px;
+  margin-left: 200px;
+  padding: 12px 18px;
+  font-size: 15px;
+  font-family: "PT Sans", sans-serif;
+  border-radius: 8px;
+}
+.submit-form {
+  padding: 12px 15px;
+  border: none;
+  width: 14%;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 10px;
+  color: white;
+  background: #ff9a3c;
+}
+
+.application {
+  background: white;
+  max-width: 700px;
+  margin: 45px auto;
+  padding: 30px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.1);
+  border-radius: 20px;
+}
+
+a {
+  color: #ff9a3c;
+  font-weight: bold;
+}
+footer {
+  margin-top: 100px;
+  font-size: 15px;
+}

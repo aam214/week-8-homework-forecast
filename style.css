@@ -1,7 +1,7 @@
 body {
   font-family: "Heebo", sans-serif;
   font-family: "Roboto Mono", monospace;
-  text-align: center;
+
   color: #155263;
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/107/493/original/earth.jpg?1702744908);
   background-repeat: no-repeat;
@@ -19,9 +19,8 @@ header {
   font-size: 14px;
 }
 h1 {
-  padding-top: 70px;
-  margin-top: 48px;
-  padding-left: 20px;
+  margin-top: 130px;
+  margin-left: 140px;
   font-size: 50px;
 }
 .weather-app-icon {
@@ -29,6 +28,7 @@ h1 {
 }
 .weather-app-data {
   display: flex;
+  text-align: center;
   justify-content: space-evenly;
 }
 .numbers,
@@ -41,7 +41,7 @@ h1 {
   font-size: 55px;
   font-weight: bold;
   position: relative;
-  padding-left: 140px;
+  padding-left: 130px;
   padding-top: 90px;
 }
 .weather-app-unit {
@@ -56,7 +56,7 @@ h1 {
   font-size: 15px;
   font-weight: bold;
   position: relative;
-  padding-left: 140px;
+  padding-left: 130px;
   padding-top: 40px;
 }
 
@@ -89,23 +89,44 @@ h1 {
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.1);
   border-radius: 20px;
 }
-
-.forecast-day {
+.weather-forecast {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.forecast-column {
+  position: relative;
+  margin-right: 50px;
+  margin-top: 35px;
+  padding-right: 15px;
+  padding-left: 10px;
+}
+.forecast-date {
   font-weight: bold;
   opacity: 0.8;
+  font-size: 15px;
+  padding-right: 10px;
+}
+.forecast-icon {
+  font-size: 57px;
+}
+.forecast-temperatures {
+  display: flex;
+  justify-content: center;
 }
 .weather-min {
   opacity: 0.8;
   font-weight: bold;
 }
 .weather-max {
-  font-weight: bold;
+  color: #bcdd29;
+  font-weight: bolder;
 }
 a {
   color: #a2c11c;
   font-weight: bold;
 }
 footer {
-  margin-top: 100px;
+  margin-top: 85px;
   font-size: 15px;
 }

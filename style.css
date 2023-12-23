@@ -83,9 +83,9 @@ h1 {
 
 .application {
   background: white;
-  max-width: 700px;
-  margin: 65px auto;
-  padding: 30px;
+  max-width: 780px;
+  margin: 75px auto;
+  padding: 75px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.1);
   border-radius: 20px;
 }
@@ -108,11 +108,16 @@ h1 {
   padding-right: 10px;
 }
 .forecast-icon {
-  font-size: 57px;
+  width: 88px;
+  height: 88px;
+  display: block;
+  margin: 0 auto;
 }
 .forecast-temperatures {
   display: flex;
+  text-align: center;
   justify-content: center;
+  padding: 0 10px;
 }
 .weather-min {
   opacity: 0.8;
@@ -128,5 +133,6 @@ a {
 }
 footer {
   margin-top: 85px;
+  text-align: center;
   font-size: 15px;
 }

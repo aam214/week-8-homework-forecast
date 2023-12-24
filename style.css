@@ -15,7 +15,7 @@ header {
 
 h1 {
   margin-top: 80px;
-  padding-right: -300px;
+  padding-left: 80px;
   font-size: 50px;
 }
 main {
@@ -36,13 +36,13 @@ main {
   font-size: 55px;
   font-weight: bold;
   margin-top: -115px;
-  padding-left: 570px;
+  padding-left: 624px;
 }
 .weather-app-unit {
   position: relative;
   font-size: 25px;
   font-weight: bold;
-  padding-left: 640px;
+  padding-left: 687px;
   margin-top: -70px;
 }
 
@@ -50,15 +50,18 @@ main {
   font-size: 15px;
   font-weight: bold;
   position: relative;
-  padding-left: 550px;
+  padding-left: 500px;
+  text-align: center;
   padding-top: 40px;
 }
-
+form {
+  text-align: center;
+}
 .search-form-input {
   background: rgb(246, 245, 250);
   border: none;
   width: 250px;
-  margin-left: 150px;
+
   padding: 12px 18px;
   font-size: 15px;
   font-family: "PT Sans", sans-serif;
@@ -77,7 +80,7 @@ main {
 
 .application {
   background: white;
-  max-width: 780px;
+  max-width: 730px;
   margin: 75px auto;
   padding: 75px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.1);
@@ -111,15 +114,17 @@ main {
   display: flex;
   text-align: center;
   justify-content: center;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 .weather-min {
   opacity: 0.8;
   font-weight: bold;
+  margin: 0 5px 0 0;
 }
 .weather-max {
   color: #bcdd29;
   font-weight: bolder;
+  margin: 0 7px 0 0;
 }
 a {
   color: #a2c11c;

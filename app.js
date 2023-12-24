@@ -9,8 +9,6 @@ function refreshWeather(response) {
   let date = new Date(response.data.time * 1000);
   let iconElement = document.querySelector("#icon");
 
-  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class= "weather-app-icon" />`;
-
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = response.data.condition.description;
@@ -18,6 +16,8 @@ function refreshWeather(response) {
   windSpeedElement.innerHTML = `${response.data.wind.speed} mph`;
   temperatureElement.innerHTML = Math.round(temperature);
   getForecast(response.data.city);
+  iconElement.innerHTML =
+    iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
 
 function formatDate(date) {
@@ -55,6 +55,13 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[date.getDay()];
+}
+
 function getForecast(city) {
   let apiKey = "8d9c6f00c08bcb1a3bo8fd87a4d1b4t6";
   let apiUrl =
@@ -71,12 +78,12 @@ function displayForecast(response) {
         forecastHtml +
         `
   <div class="forecast-column">
-    <div class="forecast-date">Tue</div>
+    <div class="forecast-date">${formatDay(day.time)}</div>
     <div>
     <img src="${day.condition.icon_url}" class="forecast-icon"/></div>
     <div class="forecast-temperatures">
-      <span class="weather-max">${Math.round(day.temperature.maximum)}</span>
-      <span class="weather-min">${Math.round(day.temperature.minimum)}<span>
+      <span class="weather-max">${Math.round(day.temperature.maximum)}°</span>
+      <span class="weather-min">${Math.round(day.temperature.minimum)}°<span>
     </div>
   </div>
 `;
@@ -89,4 +96,4 @@ function displayForecast(response) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
-searchCity("Paris");
+searchCity("Zurich");

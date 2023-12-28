@@ -16,10 +16,10 @@ function refreshWeather(response) {
   windSpeedElement.innerHTML = `${response.data.wind.speed} mph`;
   temperatureElement.innerHTML = Math.round(temperature);
   getForecast(response.data.city);
-  iconElement.innerHTML =
-    iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
-}
 
+  iconElement.setAttribute("src", response.data.condition.icon_url);
+  getForecast(response.data.city);
+}
 function formatDate(date) {
   let minutes = date.getMinutes();
   let hours = date.getHours();

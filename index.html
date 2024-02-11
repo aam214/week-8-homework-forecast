@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+  
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Roboto+Mono&display=swap" rel="stylesheet">
 
     <title>Week 8 Forecast</title>
   </head>
-  <body>
+  <body> 
     <container>
     <div class="application">
       <header>
@@ -26,28 +29,31 @@
         <input type="submit" value="Search" class="submit-form" />
         </header>
       </form>
-      <main>
-        <div class="weather-app-data">
-        <h1 class="current-city" id="current-city"></h1>
+      <main class="d-flex justify-content-around">
+         <div class="weather-app-data">
+        <h1 id="current-city"></h1>
         <img class="weather-app-icon" id="icon"/>
-      <p>
-           <div class="weather-app-temperature-container">
+    </div>
+           <div class="weather-app-temp-container">
             <div class="current-temperature" id="temperature">20</div>
-            <div class="weather-app-unit">°F</div>
-            </div> 
+             <div class="weather-app-unit">°F</div>
+              <p>
             <div class="readings">
             <div class="weather-condition" id="description">weather condition</div>
             <div class="time" id="time">Time</div> 
           <span class="humid">Humidity:<span class="numbers" id="humidity"></span></span>
           <span class="wind">Wind:<span class="numbers" id="wind-speed"></span></span>
-             </div></p>
-             <p>
-            <div class="weather-forecast" id="forecast"></div>
-        </div>
-            </p>
-            
+                </div>
+           </div>
+          </p>
+           </main>
              
-      </main>
+           <p>
+            <div class="d-flex justify-content-center" id="forecast"></div>
+            </p>
+           
+             
+     
       <footer> <div class="information">
         This project was coded by
         <a href="https://github.com/aam214" target="_blank">Ariana M.</a> hosted on

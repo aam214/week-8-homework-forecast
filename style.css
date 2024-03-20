@@ -137,7 +137,7 @@ footer {
 @media(max-width:690px){
   h1{
     font-size: 50px;
-    margin-left: 200px;
+    margin-left: 210px;
     font-weight: 800;
   }
   form{
@@ -147,7 +147,7 @@ footer {
   }
   
   .weather-app-icon {
-    margin-left: 225px;
+    margin-left: 230px;
    
   }
   .search-form-input{
@@ -155,16 +155,16 @@ footer {
 
   }
   .current-temperature {
-    margin-left: -640px;
+    margin-left: -610px;
     margin-top: 200px;
     font-size: 54px;
   }
   .weather-app-unit{
-    margin-left: -430px;
+    margin-left: -420px;
    
   }
   .readings {
-    margin-left: -598px;
+    margin-left: -600px;
     margin-top: -5px;
     margin-bottom: 90px;
   }

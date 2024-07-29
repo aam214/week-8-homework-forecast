@@ -24,34 +24,28 @@ id="search-form-input"/>
 </header>
 <main>
 <div className="row">
-<div className="col-md-6">
+<div className="col-md-4">
 <h1 id="current-city"></h1>
 <img class="weather-app-icon" id="icon"/>
 </div>
-<div class="col-md-6">
+<div class="col-md-4">
 <div class="current-temperature" id="temperature"></div>
 <div class="weather-app-unit">°F</div>
 </div>  
-</div>
-<div class="col-md-6 readings">
+<div class="col-md-4 readings">
 <ul> 
-<li>
-<div class="weather-condition" id="description">weather condition</div>
+<li class="weather-condition" id="description">weather condition
 </li>
-<li>
-  <div class="time" id="time">Time</div> 
+<li class="time" id="time">Time</li>
+<li class="humid">Humidity:<span class="numbers" id="humidity">
 </li>
-<li>
-<span class="humid">Humidity:<span class="numbers" id="humidity"></span>
-</li>
-<li>
-<span class="wind">Wind:<span class="numbers" id="wind-speed"></span>
+<li class="wind">Wind:<span class="numbers" id="wind-speed"></span>
 </li>
 </ul>        
 </div>
 </div>
+<div class="forecast" id="forecast"></div></div>
 </main>
-<div class="d-flex" id="forecast"></div></div>
 </container>
 <footer> 
 <div class="information">This project was coded by

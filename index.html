@@ -11,53 +11,51 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Roboto+Mono&display=swap" rel="stylesheet">
-
-    <title>Forecast-App</title>
-  </head>
-  <body> 
- 
-    <div class="application">
-      <header>
-      <form class="search-form"
-      id="search-form">
-        <input
-          type="search"
-          placeholder="Enter a City..."
-          required
-          class="search-form-input"
-        id="search-form-input"/>
-        <input type="submit" value="Search" class="submit-form" />
-       
-      </form>
-       </header>
-      <main class="d-flex justify-content-around">
-         <div class="weather-app-data">
-        <h1 id="current-city"></h1>
-        <img class="weather-app-icon" id="icon"/>
-    </div>
-           <div class="weather-app-temp-container">
-            <div class="current-temperature" id="temperature">20</div>
-             <div class="weather-app-unit">°F</div>
-              <p>
-            <div class="readings">
-            <div class="weather-condition" id="description">weather condition</div>
-            <div class="time" id="time">Time</div> 
-          <span class="humid">Humidity:<span class="numbers" id="humidity"></span></span>
-          <span class="wind">Wind:<span class="numbers" id="wind-speed"></span></span>
-                </div>
-           </div>
-          </p>
-           </main>
-             
-           <p>
-            <div class="d-flex" id="forecast"></div>
-            </p>
-           
-             
-         
-     
-      <footer> <div class="information">
-        This project was coded by
+<title>Forecast-App</title>
+</head>
+<body> 
+<div class="application">
+<header>
+<form class="search-form" id="search-form">
+<input type="search" placeholder="Enter a City..." required class="search-form-input" 
+id="search-form-input"/>
+<input type="submit" value="Search" class="submit-form" />
+</form>
+</header>
+<main>
+<div className="row">
+<div className="col-6">
+<h1 id="current-city"></h1>
+<img class="weather-app-icon" id="icon"/>
+</div>
+<div class="col-6">
+<div class="current-temperature" id="temperature">20</div>
+<div class="weather-app-unit">°F</div>
+</div>  
+</div>
+<div class="readings">
+<ul> 
+<li>
+<div class="weather-condition" id="description">weather condition</div>
+</li>
+<li>
+  <div class="time" id="time">Time</div> 
+</li>
+<li>
+<span class="humid">Humidity:<span class="numbers" id="humidity"></span>
+</li>
+<li>
+<span class="wind">Wind:<span class="numbers" id="wind-speed"></span>
+</li>
+</ul>        
+</div>
+</div>
+</main>
+<div className="row">
+<div className="col">
+<div class="d-flex" id="forecast"></div></div>
+<footer> 
+<div class="information">This project was coded by
         <a href="https://github.com/aam214" target="_blank">Ariana M.</a> hosted on
         <a href="https://github.com/aam214/week-8-homework-forecast" target="_blank"
           >Github</a
@@ -65,8 +63,7 @@
         and with <a href="https://weatherpage2.netlify.app/" target="_blank">Netlify</a>.
       </div>
       </footer>
-      </div>
-    <script src="app.js"></script>
-
-  </body>
+</div>  
+<script src="app.js"></script>
+</body>
 </html>

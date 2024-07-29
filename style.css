@@ -18,7 +18,9 @@ h1 {
   margin-right: 220px;
   padding-top: 70px;
 }
-
+li{
+  list-style: none;
+}
 .numbers,
 .weather-condition {
   color: #a2c11c;
@@ -42,9 +44,9 @@ h1 {
 .readings {
   font-size: 15px;
   font-weight: bold;
-  padding-top: 40px;
+ 
 
-  text-align: center;
+
 }
 form {
   text-align: center;
@@ -140,9 +142,7 @@ footer {
 margin-left: 35px;
     font-weight: 800;
   }
-  form{
-    margin-top:-40px;
-  }
+  
   
   .weather-app-icon {
     margin-left: 22px;
@@ -150,15 +150,11 @@ margin-left: 35px;
    
   }
   .search-form-input{
-    width:100%;
+    width:90%;
     text-align: center;
 display: flex;
   }
-  .current-temperature {
-    margin-left: -620px;
-    margin-top: 180px;
-    font-size: 54px;
-  }
+
   .weather-app-unit{
     margin-left: -420px;
    
@@ -190,5 +186,5 @@ display: block;
    .weather-min,.weather-max{
  margin: 0 4px 0 0;   
    }
-}
+  }
 

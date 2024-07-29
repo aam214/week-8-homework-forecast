@@ -1,18 +1,17 @@
 body {
   font-family: "Heebo", sans-serif;
-  font-family: "Roboto Mono", monospace;
   color: #155263;
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/750/original/weather.jpg?1702245046);
-  background-repeat: no-repeat;
-  background-size: cover;
+
 }
 .application {
   background: white;
   max-width: 1000px;
   margin: 0 auto;
+  margin-top: 100px;
   display: block;
   padding: 100px;
-  opacity: 0.9;
+  opacity: 0.88;
  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
@@ -101,12 +100,13 @@ margin-top: 100px;
   height: 90px;
   display: block;
   margin: 0 auto;
+  padding-left: 12px;
 }
 .forecast-temperatures {
   display: flex;
   text-align: center;
   justify-content: center;
-  margin-left: -10px;
+  margin-left: -21px;
 }
 .weather-min {
   opacity: 0.8;
@@ -132,11 +132,11 @@ footer {
 
 
 }
-@media(max-width:700px){
+@media(max-width:900px){
   .application {
   margin: 0 auto;
   display: block;
-   margin: 20px;
+   margin: 25px;
     }
 
   h1{
@@ -152,17 +152,17 @@ display: flex;
   .submit-form{
     width:40%;
   }
-  .forecast-date {
-    margin-left:10px;
-  }
- 
+
   .forecast-icon{
     width: 70px;
     height: 70px;
     margin: 10px auto;
    }
-   .weather-min,.weather-max{
- margin: 0 4px 0 0;   
+   .forecast-temperatures {
+    margin-left: -10px;
    }
+  }
+  @media(max-width: 700px){
+
   }
 

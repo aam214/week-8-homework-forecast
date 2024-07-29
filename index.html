@@ -22,16 +22,25 @@ id="search-form-input"/>
 <button type="submit" value="Search" class="submit-form">Search</button>
 </form>
 </header>
-<main>
-<div className="row">
-<div className="col-md-4">
+<div class="container text-center">
+<div class="row g-2 mt-5">
+<div class="col-md-6">
+<div class="">
 <h1 id="current-city"></h1>
-<img class="weather-app-icon" id="icon"/>
 </div>
-<div class="col-md-4">
-<div class="current-temperature" id="temperature"></div>
-<div class="weather-app-unit">°F</div>
-</div>  
+</div>
+<div class="col-md-6">
+<div class="">
+  <div class="current-temperature" id="temperature"></div>
+<span class="weather-app-unit">°F</div>
+</span>
+</div>
+<div class="col-md-6">
+<div class="">
+<img class="weather-app-icon" width="140" id="icon"/></div>
+</div>
+<div class="col-md-6">
+<div class="">
 <div class="col-md-4 readings">
 <ul> 
 <li class="weather-condition" id="description">weather condition
@@ -42,6 +51,9 @@ id="search-form-input"/>
 <li class="wind">Wind:<span class="numbers" id="wind-speed"></span>
 </li>
 </ul>        
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="forecast" id="forecast"></div></div>

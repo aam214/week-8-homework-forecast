@@ -11,17 +11,34 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   display: block;
-  padding: 200px;
+  padding: 100px;
   opacity: 0.9;
  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
+form {
+  text-align: center;
+}
+.search-form-input {
+  background: rgb(246, 245, 250);
+  border: none;
+  max-width: 800px;
+  padding: 18px 18px;
+  font-size: 15px;
+  font-family: "PT Sans", sans-serif;
+  border-radius: 8px;
+}
+header {
+  border-bottom: 1px solid rgb(235, 235, 235);
+ padding-bottom: 40px;
+  margin-top:-40px;
+}
 input{
-width: 70%;
+width: 55%;
  align-items: center;
 }
 .submit-form {
-  padding: 12px 25px 12px 25px;
+  padding: 16px 25px 16px 25px;
   border: none;
   width: 22%;
   font-weight: bold;
@@ -34,15 +51,13 @@ width: 70%;
   opacity: 0.7;
   transition: 0.1s;
 }
-header {
-  border-bottom: 1px solid rgb(235, 235, 235);
- padding-bottom: 40px;
-  margin-top:-140px;
-}
 h1 {
-text-align: start;
-margin-top: 90px;
+
 font-size: 65px;
+}
+.weather-app-icon {
+  font-size: 100px;
+  margin-top: -9px;
 }
 li{
   list-style: none;
@@ -50,38 +65,22 @@ li{
 .numbers,
 .weather-condition {
   color: #a2c11c;
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 25px;
+  font-weight: 500;
 }
 .current-temperature {
-  font-size: 55px;
-  padding-top: 50px;
-  font-weight: bold;
-  text-align: center;
+  font-size: 60px;
+  font-weight: 500;
 }
+
 .weather-app-unit{
-  font-size: 25px;
-  display: flex;
-  font-weight: bold;
-  padding-left: 149px;
-  margin-top: -70px;
+  font-size: 60px;
+  font-weight: 500;
 }
 
 .readings {
-  font-size: 15px;
-  font-weight: bold;
-}
-form {
-  text-align: center;
-}
-.search-form-input {
-  background: rgb(246, 245, 250);
-  border: none;
-  max-width: 800px;
-  padding: 12px 18px;
-  font-size: 15px;
-  font-family: "PT Sans", sans-serif;
-  border-radius: 8px;
+  font-size: 25px;
+  font-weight:bold;
 }
 .forecast{
   display: flex;
@@ -132,12 +131,6 @@ footer {
   border-top: 1px solid rgb(235, 235, 235);
   padding: 25px 0 0 0;
   font-size: 14px;
-}
-.weather-app-icon {
-  font-size: 65px;
-  position: absolute;
-  margin-top: -9px;
-  padding-left: 20px;
 }
 @media(max-width:700px){
   h1{

@@ -14,26 +14,26 @@
 <title>Forecast-App</title>
 </head>
 <body> 
-<div class="application">
+<container class="application">
 <header>
 <form class="search-form" id="search-form">
 <input type="search" placeholder="Enter a City..." required class="search-form-input" 
 id="search-form-input"/>
-<input type="submit" value="Search" class="submit-form" />
+<button type="submit" value="Search" class="submit-form">Search</button>
 </form>
 </header>
 <main>
 <div className="row">
-<div className="col-6">
+<div className="col-md-6">
 <h1 id="current-city"></h1>
 <img class="weather-app-icon" id="icon"/>
 </div>
-<div class="col-6">
-<div class="current-temperature" id="temperature">20</div>
+<div class="col-md-6">
+<div class="current-temperature" id="temperature"></div>
 <div class="weather-app-unit">°F</div>
 </div>  
 </div>
-<div class="readings">
+<div class="col-md-6 readings">
 <ul> 
 <li>
 <div class="weather-condition" id="description">weather condition</div>
@@ -51,9 +51,8 @@ id="search-form-input"/>
 </div>
 </div>
 </main>
-<div className="row">
-<div className="col">
 <div class="d-flex" id="forecast"></div></div>
+</container>
 <footer> 
 <div class="information">This project was coded by
         <a href="https://github.com/aam214" target="_blank">Ariana M.</a> hosted on

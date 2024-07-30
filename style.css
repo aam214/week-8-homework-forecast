@@ -36,7 +36,7 @@ input{
 width: 55%;
  align-items: center;
 }
-.submit-form {
+.submit-button {
   padding: 16px 25px 16px 25px;
   border: none;
   width: 22%;
@@ -140,7 +140,7 @@ footer {
     }
 
   h1{
-    font-size: 45px;
+    font-size: 50px;
     font-weight: 500;
   }
   .search-form-input{
@@ -162,7 +162,31 @@ display: flex;
     margin-left: -10px;
    }
   }
-  @media(max-width: 700px){
-
+  @media(max-width: 780px){
+.application{
+margin: 20px;
+opacity: 0.8;
+display: block;
   }
+  input{
+    width: 70%;
+  }
+  .submit-button {
+    padding: 10px 20px 10px 20px;
+    border: none;
+    width: 80%;
+  }
+  h1{
+    font-size: 58px;
+    letter-spacing: 1.1px;
+    text-align: center;
+  }
+  .weather-app-icon,
+  .current-temperature, ul{
+    text-align: center;
+  }
+  ul, li, .readings{
+    text-align: center;
+    font-size: 17px;
+  }}
 

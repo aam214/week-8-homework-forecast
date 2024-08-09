@@ -33,13 +33,12 @@ header {
   margin-top:-40px;
 }
 input{
-width: 55%;
+width: 50%;
  align-items: center;
 }
 .submit-button {
-  padding: 16px 25px 16px 25px;
+  padding: 15px 25px 15px 25px;
   border: none;
-  width: 22%;
   font-weight: bold;
   font-size: 18px;
   border-radius: 8px;
@@ -59,7 +58,7 @@ li{
 .numbers,
 .weather-condition {
   color: #a2c11c;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
 }
 .current-temperature {
@@ -97,13 +96,14 @@ margin-top: 100px;
 }
 .forecast-icon {
   width: 90px;
-  height: 90px;
+  height: 78px;
   display: block;
   margin: 0 auto;
   padding-left: 12px;
 }
 .forecast-temperatures {
-  display: flex;
+  display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   text-align: center;
   justify-content: center;
   margin-left: -21px;
@@ -111,7 +111,7 @@ margin-top: 100px;
 .weather-min {
   opacity: 0.8;
   font-weight: bold;
-  margin: 0 8px 0 0;
+  margin: 0 9px 0 0;
 }
 .weather-max {
   color: #bcdd29;
@@ -143,43 +143,50 @@ footer {
     font-size: 50px;
     font-weight: 500;
   }
-  .search-form-input{
-width:90%;
-text-align: center;
-display: flex;
+  .search-form{
+    display: flex;
+    justify-content: center;
+   
+  }
+.search-form-input{
+width:55%;
+padding: 10px 20px;
   }
 
-  .submit-form{
-    width:40%;
+  .submit-button{
+    padding: 20px 20px; 
+    margin: 10px;
   }
 
   .forecast-icon{
     width: 70px;
-    height: 70px;
+    height: 60px;
     margin: 10px auto;
    }
    .forecast-temperatures {
-    margin-left: -10px;
+    margin-left: -5px;
    }
   }
   @media(max-width: 780px){
 .application{
-margin: 20px;
-opacity: 0.8;
-display: block;
+  margin: 18px;
+  opacity: 0.8;
   }
-  input{
-    width: 70%;
-  }
+
   .submit-button {
     padding: 10px 20px 10px 20px;
-    border: none;
     width: 80%;
   }
   h1{
-    font-size: 58px;
+    font-size: 50px;
     letter-spacing: 1.1px;
     text-align: center;
+  }
+  .current-temperature{
+    font-size: 55px;
+  }
+  .weather-app-unit{
+    font-size: 50px;
   }
   .weather-app-icon,
   .current-temperature, ul{
@@ -188,5 +195,9 @@ display: block;
   ul, li, .readings{
     text-align: center;
     font-size: 17px;
-  }}
-
+  }
+  .forecast{
+    display: grid;
+    grid-template-columns: 2fr;
+  }
+}

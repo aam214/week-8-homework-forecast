@@ -1,8 +1,10 @@
 body {
   font-family: "Heebo", sans-serif;
   color: #155263;
+  background-repeat: no-repeat;
+background-attachment:fixed;
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/750/original/weather.jpg?1702245046);
-
+  height: 100vh;
 }
 .application {
   background: white;
@@ -21,7 +23,9 @@ form {
 .search-form-input {
   background: rgb(246, 245, 250);
   border: none;
-
+  width: 50%;
+  line-height: 12px;
+  margin: 10px;
   padding: 18px 18px;
   font-size: 15px;
   font-family: "PT Sans", sans-serif;
@@ -33,13 +37,17 @@ header {
   margin-top:-40px;
 }
 input{
-width: 50%;
  align-items: center;
 }
 .submit-button {
-  padding: 15px 25px 15px 25px;
+  box-shadow: 1px 1px 0.5px 1px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 18px;
+  margin: 5px;
+  width: 20%;
+  padding: 10px 12px;
+ cursor: pointer;
   border: none;
-  font-weight: bold;
   font-size: 18px;
   border-radius: 8px;
   color: white;
@@ -63,12 +71,10 @@ li{
 }
 .current-temperature {
   font-size: 65px;
+
 }
 .weather-app-unit{
   font-weight: 500;
-position: absolute;
-  margin-top: -100px;
-  margin-left: 40px;
   font-size: 65px;
 }
 li{
@@ -88,7 +94,7 @@ margin-top: 70px;
 .forecast-date {
   font-weight: bold;
   opacity: 0.8;
-  font-size: 20px;
+  font-size: 24px;
 }
 .forecast-icon {
   width: 90px;
@@ -99,8 +105,8 @@ margin-left: -30px;
 .forecast-temperatures {
 display: flex;
   text-align: center;
-margin-left: -10px;
-justify-content: space-evenly;
+  margin-left: 20px;
+justify-content: center;
 }
 .weather-min {
   opacity: 0.8;
@@ -144,52 +150,70 @@ footer {
     justify-content: center;
    
   }
-
-  .submit-button{
-    padding: 15px 20px 15px 20px;
-    margin: 10px;
+  .submit-button {
+    padding: 5px 10px 5px 10px;
   }
-
   .forecast-icon{
     width: 70px;
     height: 60px;
-    margin: 10px auto;
+ 
    }
-   .forecast-temperatures {
-    margin-left: -5px;
-   }
+  
   }
-  @media(max-width: 780px){
+  @media(max-width: 750px){
 .application{
-  margin: 18px;
+  margin: 60px;
   opacity: 0.8;
   }
+.search-form-input{
+  width: 200px;
+}
+.submit-button{
+  height: 50px;
+  width: 125px;
+  margin-top: 10px;
+}
 
-  .submit-button {
-    padding: 10px 20px 10px 20px;
-    width: 80%;
-  }
   h1{
-    font-size: 50px;
+    font-size: 70px;
     letter-spacing: 1.1px;
     text-align: center;
   }
   .current-temperature{
-    font-size: 55px;
+    font-size: 60px;
+    margin-left: -10px;
   }
   .weather-app-unit{
-    font-size: 50px;
+    font-size: 60px;
   }
   .weather-app-icon,
   .current-temperature, ul{
     text-align: center;
+    align-items: center;
+
   }
-  ul, li, .readings{
+  ul{
     text-align: center;
-    font-size: 17px;
+    font-size: 20px;
+    margin-left: -40px;
   }
   .forecast{
     display: grid;
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
   }
+}
+@media(max-width: 500px){
+.application{
+  margin: 35px;
+}
+  h1{
+  font-size: 50px;
+}
+.current-temperature{
+  font-size: 50px;
+}
+.weather-app-unit{
+  font-size: 50px;
+}
 }

@@ -12,7 +12,7 @@ background-attachment:fixed;
   margin: 0 auto;
   margin-top: 100px;
   display: block;
-  padding: 100px;
+  padding: 70px;
   opacity: 0.88;
  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -154,8 +154,8 @@ footer {
     padding: 5px 10px 5px 10px;
   }
   .forecast-icon{
-    width: 70px;
-    height: 60px;
+    width: 80px;
+    height: 70px;
  
    }
   
@@ -194,7 +194,7 @@ footer {
   }
   ul{
     text-align: center;
-    font-size: 20px;
+    font-size: 200px;
     margin-left: -40px;
   }
   .forecast{
@@ -207,6 +207,12 @@ footer {
 .application{
   margin: 35px;
 }
+.search-form-input{
+  width:150px;
+}
+.submit-button{
+  font-size: 15px;
+}
   h1{
   font-size: 50px;
 }
@@ -215,5 +221,8 @@ footer {
 }
 .weather-app-unit{
   font-size: 50px;
+}
+.forecast-date{
+  margin-left: 10px;
 }
 }

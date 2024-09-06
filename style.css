@@ -40,7 +40,7 @@ input{
  align-items: center;
 }
 .submit-button {
-  box-shadow: 1px 1px 0.5px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2);
   color: white;
   font-size: 18px;
   margin: 5px;
@@ -100,7 +100,7 @@ margin-top: 70px;
   width: 90px;
   height: 78px;
 position: absolute;
-margin-left: -30px;
+margin-left: -10px;
 }
 .forecast-temperatures {
 display: flex;

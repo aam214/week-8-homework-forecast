@@ -69,17 +69,17 @@ li{
   font-size: 20px;
   font-weight: 500;
 }
+.currently{
+  margin-top: -10px;
+}
 .current-temperature {
-  font-size: 65px;
-
+  font-size: 70px;
 }
 .weather-app-unit{
   font-weight: 500;
-  font-size: 65px;
+  font-size: 70px;
 }
-li{
-  font-size: 20px;
-}
+
 .readings {
   font-size: 20px;
   margin-left: 15px;
@@ -97,10 +97,10 @@ margin-top: 70px;
   font-size: 24px;
 }
 .forecast-icon {
-  width: 90px;
-  height: 78px;
+  width: 100px;
+  height: 88px;
 position: absolute;
-margin-left: -10px;
+margin-left: -40px;
 }
 .forecast-temperatures {
 display: flex;
@@ -154,8 +154,8 @@ footer {
     padding: 5px 10px 5px 10px;
   }
   .forecast-icon{
-    width: 80px;
-    height: 70px;
+    width: 90px;
+    height: 80px;
  
    }
   

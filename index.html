@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="Weather application with forecast.">
+  <meta name="description" content="Weather and forecast application.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -23,14 +23,14 @@ id="search-form-input"/>
 </form>
 </header>
 <div class="container text-center">
-<div class="row g-2 mt-5">
+<div class="row mt-5">
 <div class="col-md-6">
 <div>
 <h1 id="current-city"></h1>
 </div>
 </div>
 <div class="col-md-6">
-<div class="ms-5">
+<div class="currently">
 <span class="current-temperature" id="temperature"></span>
   <span class="weather-app-unit">°F</span>
 </div>
@@ -41,17 +41,15 @@ id="search-form-input"/>
 </div>
 </div>
 <div class="col-md-6">
-<div>
-<div class="readings">
+<div class="mt-5">
 <ul> 
-<li class="weather-condition" id="description">Weather condition</li>
+<li class="weather-condition" id="description"></li>
 <li class="weather-condition" id="time">Time: </li>
 <li class="readings">Humidity: <span class="numbers" id="humidity"></span>
 </li>
 <li class="readings">Wind: <span class="numbers" id="wind-speed"></span>
 </li>
 </ul>        
-</div>
 </div>
 </div>
 </div>
